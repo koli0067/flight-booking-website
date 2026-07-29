@@ -250,7 +250,10 @@ ul li a:hover{
 
 
     /* hero section  */
-
+    
+     .hero_section{
+        margin-top: 10%;
+    }
     .hero_area{
         grid-template-columns: 1fr;
         text-align: center;
