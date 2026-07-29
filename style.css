@@ -248,9 +248,8 @@ ul li a:hover{
     }
 
 
-
     /* hero section  */
-    
+
      .hero_section{
         margin-top: 10%;
     }
@@ -258,7 +257,7 @@ ul li a:hover{
         grid-template-columns: 1fr;
         text-align: center;
     }
-
+    
     .hero_text_area{
         grid-column: 1;
         padding-top: 5rem; 
