@@ -37,10 +37,6 @@
 } */
 
 header{
-    position: fixed;
-    top: 30px;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: space-between;
     max-width: var(--max-width); 
@@ -48,9 +44,7 @@ header{
     padding: 30px 40px;
     align-items: center;
     margin: 0 auto;
-    z-index: 9;
     background-color: var(--white); 
-    border-radius: 20px;
 }
 .nav_logo h2{
     font-size: 25px;
@@ -82,6 +76,10 @@ ul li a:hover{
     outline: none;
     color: var(--white);
     font-size: 16px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: var(--primary-color-dark);
 }
 
 .nav_manu_btn{
@@ -103,17 +101,18 @@ ul li a:hover{
 /* hero section start  */
 
 .hero_section{
-    margin-top: 12%;
+    margin: 10px auto;  
     padding-inline: 1rem;
     position: relative;
     isolation: isolate;
     overflow: hidden;
+    max-width: var(--max-width); 
 }
 .hero_section::before{
     position: absolute;
     content: "";
     height: 100%;
-    width: calc(100% - 2rem);
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -125,12 +124,12 @@ ul li a:hover{
     z-index: -1;
 }
 .hero_area{
-    z-index: 11; 
     display: grid;
     grid-template-columns: 
     minmax(0, 1fr)
     repeat(5, minmax(0, calc(var(--max-width) / 5)))
     minmax(0, 1fr); 
+    padding: 0 20px;  
 }
 .hero_text_area{
     grid-column: 2/4;
@@ -150,13 +149,18 @@ ul li a:hover{
     gap: 15px; 
 }
 .hero_area_btn button{
-   background-color: var(--primary-color-dark);
+   background-color: var(--primary-color);
    color: var(--white);
    border: none;
    outline: none;
    padding: 15px 35px;
    border-radius: 50px;
    font-size: 16px;
+   transition: 0.3s;
+}
+.hero_area_btn button:hover{
+    background-color: var(--primary-color-dark);
+    transform: translateY(-5px);
 }
 .hero_area_btn i{
     padding: 9px 13px;
@@ -191,7 +195,80 @@ ul li a:hover{
 
 /* hero section end */
 
+/* box _area start  */
 
+.populer_section{
+    max-width: var(--max-width);
+    padding: 30px 40px;
+    margin:  20px auto;
+}
+.populer_section h2{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.populer_section p{
+    font-size: 20px;
+    color: var(--text-light);
+}
+
+.box_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 4rem;
+    width: 100%; 
+}
+.img_box{
+    overflow: hidden;
+    border-radius: 1.5rem;
+    outline: none;
+}
+.img_box img{
+    border-radius: 1.5rem;
+    transition: 0.3s;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.img_box img:hover{
+    transform: scale(1.15) translateY(-10px);
+}
+.box_text_area{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.box_text h3{
+   font-size: 20px;
+   color: var(--text-dark);
+   padding-bottom: 7px;
+}
+.box_text p{
+   font-size: 16px;
+   color: var(--text-light);
+}
+.box_btn button{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.box_btn button i{
+    padding-right: 3px;
+}
+
+
+/* box_area end  */
+
+/* unleash_section start  */
+
+.unleash_section{
+    max-width: var(--max-width);
+}
+
+
+/* unleash_section end  */
 
 
 @media(max-width:799px){
@@ -199,8 +276,6 @@ ul li a:hover{
         padding:20px; 
         flex-wrap:wrap;
         background-color: var(--primary-color); 
-        top: 0;
-        border-radius: 0;
     }
     .nav_header{
         display: flex;
@@ -220,7 +295,7 @@ ul li a:hover{
     } 
     .nav_link{
         position:absolute;
-        top:100%;
+        top: 70px;
         left:0;
         width:100%;
         color: var(--white);
@@ -231,6 +306,7 @@ ul li a:hover{
         overflow: hidden;
         opacity: 0; 
         transform: translateY(-15px);
+        z-index: 999;
         transition: all .4s ease;
     }
     ul li a {
@@ -250,9 +326,6 @@ ul li a:hover{
 
     /* hero section  */
 
-     .hero_section{
-        margin-top: 10%;
-    }
     .hero_area{
         grid-template-columns: 1fr;
         text-align: center;
@@ -285,6 +358,23 @@ ul li a:hover{
         display: block;
     } 
 
+
+    /* .box_area  */
+    
+    .populer_section h2{
+        text-align: center;
+    }
+    .populer_section p{
+        text-align: center;
+    }
+    .box_area{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
    
 }
 
+@media(max-width:1025px){
+
+}

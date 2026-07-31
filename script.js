@@ -33,3 +33,20 @@ ScrollReveal().reveal(".hero_area_btn",{
     ...scrollRevealOption,
     delay: 1500,
 });
+
+   // box area 
+
+ScrollReveal().reveal(".box1",{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".box2",{
+    ...scrollRevealOption,
+    delay: 800,
+});
+
+ScrollReveal().reveal(".box3",{
+    ...scrollRevealOption,
+    delay: 1000,
+});
