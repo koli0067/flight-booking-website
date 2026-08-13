@@ -50,3 +50,40 @@ ScrollReveal().reveal(".box3",{
     ...scrollRevealOption,
     delay: 1000,
 });
+
+
+// counter area 
+
+
+ScrollReveal().reveal(".count1",{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".count2",{
+    ...scrollRevealOption,
+    delay: 800,
+});
+
+ScrollReveal().reveal(".count3",{
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+
+// Cityscapes-all-boxs
+
+ScrollReveal().reveal(".areal-1",{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".areal-2",{
+    ...scrollRevealOption,
+    delay: 800,
+});
+
+ScrollReveal().reveal(".areal-3",{
+    ...scrollRevealOption,
+    delay: 1000,
+});
